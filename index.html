@@ -6,165 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/aviao.fav.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
     <title>Agência de viagens</title>
 </head>
 <body>
     <header>
-        <div>
-            <img src="imagens/local-logo.png" alt="Logo">
-            <p>Agência de Viagens</p>
-        </div>
+            <div class="topo estilo-compartilhado">
+                <img src="imagens/local-logo.png" alt="Logo">
+                <p>Agência de Viagens</p>
+            </div>
     </header>
     <main>
-        <section>
-            <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/" method="post">
+        <section class="segunda-secao"> 
 
+        <div class="estilo-compartilhado orcamento">
+            <div class="logo-aviao">
+                <img src="imagens/aviao.png" alt="aviao" title="Avião-logo">
                 <h1>Solicite um Orçamento</h1>
-                <fieldset>
-                    <legend>Informe seus Dados</legend>
+            </div>
+                <div class="orcamento-formulario">
+                    <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/" method="post">
+                            <h2 class="subtitulo-form">Informe seus Dados</h2>
 
-                    <div>
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-                    </div>
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Digite um email valído" required>
+                                <label for="celular">Celular</label>
+                                <input type="tel" name="celular" id="celular" placeholder="(XX)XXXXX-XXXX" required>
 
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Digite um email valído" required>
-                    </div>
-
-                    <div>
-                        <label for="celular">Celular</label>
-                        <input type="tel" name="celular" id="celular" placeholder="(XX)XXXXX-XXXX" required>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div>
-                        <label for="ida">Data de ida</label>
-                        <input type="date" name="ida" id="ida">
-                    </div>
-
-                    <div>
-                        <label for="volta">Data de volta</label>
-                        <input type="date" name="volta" id="volta">
-                    </div>   
-                </fieldset>
-
-                <fieldset>
-                    <div>
-                        <label for="origem">Origem</label>
-                        <select name="origem" id="origem">
-                            <option value="" selected>Partindo de...</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="GO">Goias</option>
-                            <option value="MA">Maranhão</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="destino">Destino</label>
-                        <select name="destino" id="destino">
-                            <option value="">Indo para...</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="GO">Goias</option>
-                            <option value="MA">Maranhão</option>
-                        </select>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Quarto com cama infantil?</legend>
-                    <div>
-                        <label for="quartos">Sim</label>
-                        <input type="radio" name="quartos" id="sim" value="sim" checked>
-                    </div>
-                    <div>
-                        <label for="quartos">Não</label>
-                        <input type="radio" name="quartos" id="nao" value="nao">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Preferêcias de hospedagem</legend>
-                    <div>
-                        <div>
-                            <label for="piscina">Piscina</label>
-                            <input type="checkbox" name="piscina" id="piscina">
+                        <div class="campo-duplo">
+                            <div>
+                                <label for="ida">Data de ida</label>
+                                <input type="date" name="ida" id="ida">
+                            </div>
+                            <div>
+                                <label for="volta">Data de volta</label>
+                                <input type="date" name="volta" id="volta">
+                            </div>
                         </div>
-                        <div>
-                            <label for="wifi">Wi-Fi</label>
-                            <input type="checkbox" name="wifi" id="wifi">
+                        <div class="campo-duplo">
+                            <div>
+                                <label for="origem">Origem</label>
+                                <select name="origem" id="origem">
+                                    <option value="" selected>Partindo de...</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="destino">Destino</label>
+                                <select name="destino" id="destino">
+                                    <option value="">Indo para...</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
                         </div>
-                        <div>
-                            <label for="garagem">Garagem</label>
-                            <input type="checkbox" name="garagem" id="garagem">
+
+                        <label>Quarto com cama infantil?</label>
+
+                        <div class="radio">
+                            <div>
+                                <label for="quartos">Sim</label>
+                                <input type="radio" name="quartos" id="sim" value="sim" checked>
+                            </div>
+                            <div>
+                                <label for="quartos">Não</label>
+                                <input type="radio" name="quartos" id="nao" value="nao">
+                            </div>
                         </div>
-                        <div>
-                            <label for="suite">Suíte</label>
-                            <input type="checkbox" name="suite" id="suite">
+
+                        <label>Preferêcias de hospedagem</label>
+
+                        <div class="radio">
+
+                            <div>
+                                <div>
+                                    <label for="piscina">Piscina</label>
+                                    <input type="checkbox" name="piscina" id="piscina">
+                                </div>
+                                <div>
+                                    <label for="wifi">Wi-Fi</label>
+                                    <input type="checkbox" name="wifi" id="wifi">
+                                </div>
+                                <div>
+                                    <label for="garagem">Garagem</label>
+                                    <input type="checkbox" name="garagem" id="garagem">
+                                </div>
+                                <div>
+                                    <label for="suite">Suíte</label>
+                                    <input type="checkbox" name="suite" id="suite">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </fieldset>
-                <button type="submit">Solicitar Orçamento</button>
-            </form>
+                        <button type="submit">Solicitar Orçamento</button>
+                    </form>
+                </div>
+        </div>
         </section>
-        <section>
-            <div>
+        <section class="secao-oferta estilo-compartilhado">
                 <h2>Ofertas</h2>
                 <h3>Com até <span>50%</span> de desconto</h3>
-            </div>
-            <div>
-                <div>
+            <div class="oferta-imagens">
+                <figure class="imagem-unica imagens">
                     <img src="imagens/rio.jpg" alt="rio de janeiro" title="Rio de Janeiro">
-                        <span>Rio de Janeiro</span>
-                </div>
-                <div>
-                    <div>
+                        <figcaption>Rio de Janeiro</figcaption>
+                </figure>
+                <div class="quatro-imagens">
+                    <figure class="imagens">
                         <img src="imagens/saopaulo.jpg" alt="sao paulo" title="São Paulo">
-                        <span>São Paulo</span>
-                    </div>
-                    <div>
+                        <figcaption>São Paulo</figcaption>
+                    </figure>
+                    <figure class="imagens">
                         <img src="imagens/manaus.jpg" alt="manaus" title="Manaus">
-                        <span>Manaus</span>
-                    </div>
-                    <div>
+                        <figcaption>Manaus</figcaption>
+                    </figure>
+                    <figure class="imagens">
                         <img src="imagens/niteroi.jpg" alt="niteroi" title="Niteroi">
-                        <span>Rio de Janeiro</span>
-                    </div>
-                    <div>
+                        <figcaption>Rio de Janeiro</figcaption>
+                    </figure>
+                    <figure class="imagens">
                         <img src="imagens/maranhao.jpg" alt="maranhao" title="Maranhão">
-                        <span>Maranhão</span>
-                    </div>
+                        <figcaption>Maranhão</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="secao-anuncios estilo-compartilhado">
             <h2>Explore a Natureza</h2>
             <h3>Viaje conosco e veja o que de melhor a natureza tem a oferecer.</h3>
-            <div>
-                <div>
+            <div class="anuncios-imagens">
+                <figure class="anuncios-imagem">
                     <img src="imagens/lencol.jpg" alt="lencois-maranhenses" title="Lençois Maranhenses">
                     <div>
                         <h2>Lençois Maranhenses, Brasil</h2>
                         <p>Ida e volta a partir de R$79</p>
                     </div>
-                </div>
-                <div>
+                </figure>
+                <figure class="anuncios-imagem">
                     <img src="imagens/goias.jpg" alt="Cachoeira Santa Barbara" title="Cachoeira Santa Bárbara">
                     <div>
                         <h2>Cachoeira Santa Bárbara</h2>
                         <p>Ida e volta por R$139</p>
                     </div>
-                </div>
+                </figure>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <div>
+        <div class="rodape estilo-compartilhado">
+            <div class="rodape-conteudo">
                 <h2>Contato</h2>
                 <div>
                     <img src="imagens/local.png" alt="local">
@@ -179,7 +177,7 @@
                     <span>Email: contato@agencia.com</span>
                 </div>
             </div>
-            <div>
+            <div class="rodape-conteudo">
                 <h2>Nossas Redes Sociais</h2>
                 <div>
                     <img src="imagens/fb.png" alt="facebook">
