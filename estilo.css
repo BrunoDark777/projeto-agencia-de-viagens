@@ -289,3 +289,62 @@ footer{
     color: #fff;
 }
 
+/* Media Queries */
+
+@media ( max-width: 1100px){
+    .estilo-compartilhado{
+        width: 90%;
+    }
+}
+
+@media( max-width:768px){
+    button{
+        width: 100%;
+    }
+
+    .oferta-imagens{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .quatro-imagens{
+        width: 100%;
+        align-items: center;
+    }
+
+    .imagens{
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .anuncios-imagens{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .anuncios-imagens img{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .rodape{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape-conteudo{
+        width: 250px;
+    }
+}
+
+@media(max-width: 540px){
+    .campo-duplo, .radio{
+        flex-direction: column;
+    }
+
+    .campo-duplo div, .radio div{
+        width: 100%;
+    }
+}
+
